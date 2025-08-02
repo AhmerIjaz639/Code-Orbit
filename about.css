@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #060518, #0b0e2e); /* existing dark techy background */
+  font-family: 'Segoe UI', sans-serif;
+}
+.top-navbar {
+
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #f50b0b, #004aad);
+  border-radius: 30px;
+  padding: 12px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  display: flex;
+  gap: 30px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.top-navbar a {
+  color: #ffffffcc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.top-navbar a:hover {
+  color: #00ffff;
+}
+
+
+/* ===== General Styling ===== */
+body {
+  margin: 0;
+  background: linear-gradient(135deg , #f20606, #0a0eef); 
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== Section 1: About Site ===== */
+#about-site {
+  text-align: center;
+  padding: 40px 20px;
+
+  color: #ffffff;
+}
+
+
+
+
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+#about-owner {
+  text-align: center;
+  padding: 20px 20px;
+  
+  
+  color: #fff;
+}
+
+.team-title {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.team-card {
+    
+  background: linear-gradient(150deg , #a9d7f0, #0a0eef); 
+ 
+  color: #f8f5f5;
+  padding: 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  margin: 10px;
+}
+
+.team-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 40%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 2px solid #0033cc;
+}
+
+.title {
+  font-style: italic;
+  color: #f7f5f5;
+  margin-top: 5px;
+}
+
+.quote {
+  font-size: 14px;
+  color: #faf9f9;
+  margin-top: 15px;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.team-card {
+  animation: float 5s ease-in-out infinite;
+}
+
+
+
+
+
+.footer {
+  background: linear-gradient(90deg, #fb0e0e, #202bf7);
+  color: #ffffffcc;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  margin-top: 40px;
+  border-top: 1px solid #ffffff22;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+.footer-content p {
+  margin: 0px 0;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}

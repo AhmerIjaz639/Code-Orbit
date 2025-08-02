@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Android Developer</title>
+  <link rel="stylesheet" href="android.css">
+  
+</head>
+<body>
+  
+
+<div class="top-navbar">
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Feedback.html">Feedback</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Explore.html">Explore</a>
+  </div>
+
+
+  <div class="title">
+    <h1>Android developer</h1>
+    <p>Explore the Android Career Path from zero to pro!</p>
+  </div>
+
+  <div class="cards">
+    <div class="card" onclick="toggleSection('languages')">
+      <img src="https://img.icons8.com/ios-filled/50/000000/checked-checkbox.png" alt="Languages" />
+      <p>Languages</p>
+    </div>
+    <div class="card" onclick="toggleSection('tools')">
+      <img src="https://img.icons8.com/ios-filled/50/000000/settings.png" alt="Tools" />
+      <p>Tools</p>
+    </div>
+    <div class="card" onclick="toggleSection('uiux')">
+      <img src="https://img.icons8.com/ios-filled/50/000000/3d-glasses.png" alt="UI/Ux" />
+      <p>UI/UX</p>
+    </div>
+    <div class="card" onclick="toggleSection('components')">
+      <img src="https://img.icons8.com/ios-filled/50/000000/photo-editor.png" alt="Components" />
+      <p>Components</p>
+    </div>
+  </div>
+
+  <!-- Reveal sections -->
+  <div class="section" id="languages">
+  <h3>Languages for Android Dev</h3>
+  <ul>
+    <li>
+      <strong>Java</strong><br>
+      The traditional language for Android, object-oriented and powerful.
+    </li>
+    <li>
+      <strong>Kotlin</strong><br>
+      Official modern language by Google, concise and safer than Java.
+    </li>
+    <li>
+      <strong>Dart (Flutter)</strong><br>
+      Used with Flutter for cross-platform apps — one codebase for Android & iOS.
+    </li>
+    <li>
+      <strong>XML (UI Layouts)</strong><br>
+      Used to define UI elements and layout structure in Android apps.
+    </li>
+  </ul>
+</div>
+
+<div class="section" id="tools">
+  <h3>Essential Tools</h3>
+  <ul>
+    <li>
+      <strong>Android Studio</strong><br>
+      Official IDE with features like layout editor, debugging, and emulator.
+    </li>
+    <li>
+      <strong>ADB (Android Debug Bridge)</strong><br>
+      Command-line tool to communicate with Android devices.
+    </li>
+    <li>
+      <strong>Firebase</strong><br>
+      Backend-as-a-Service offering authentication, database, and analytics.
+    </li>
+  </ul>
+</div>
+
+<div class="section" id="uiux">
+  <h3>UI/UX in Android</h3>
+  <ul>
+    <li>
+      <strong>Material Design Guidelines</strong><br>
+      Google's design system with rules for colors, spacing, buttons, and more.
+    </li>
+    <li>
+      <strong>Jetpack Compose</strong><br>
+      Modern toolkit for building native UI using declarative Kotlin code.
+    </li>
+    <li>
+      <strong>Wireframes & Prototypes</strong><br>
+      Initial designs for app layout and user flow using tools like Figma.
+    </li>
+  </ul>
+</div>
+
+<div class="section" id="components">
+  <h3>Reusable Components</h3>
+  <ul>
+    <li>
+      <strong>RecyclerView</strong><br>
+      Efficiently displays large sets of data in scrollable lists.
+    </li>
+    <li>
+      <strong>Fragments</strong><br>
+      Modular sections of UI that can be reused across activities.
+    </li>
+    <li>
+      <strong>ViewModel & LiveData</strong><br>
+      Architecture components for managing UI-related data lifecycle-aware.
+    </li>
+  </ul>
+</div>
+
+
+  <!-- Toggle Section Buttons -->
+  <div class="toggle-buttons">
+    <button onclick="toggleSection('roadmap')">📍 Roadmap</button>
+    <button onclick="toggleSection('miniprojects')"> Mini Projects</button>
+    <button onclick="toggleSection('questions')"> UI/UX Questions</button>
+  </div>
+
+  <div class="section" id="roadmap">
+  <h3>Android Developer Roadmap</h3>
+  <img src="androidRoadmap.jpg" alt="Downloadable Image" class="roadmap-image" id="zoomImg">
+  <a href="androidRoadmap.jpg" download="Android-Roadmap.jpg" class="download-button">Download RoadMap</a>
+</div>
+
+<!-- Modal for Zoom -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgModal">
+</div>
+
+<div class="section" id="miniprojects">
+  <h3>Mini Projects Ideas</h3>
+  <ul>
+    <li>
+      <div>
+        <strong>To‑Do List App</strong><br>
+        – <b>Goal:</b> Add & delete daily tasks<br>
+        – <b>Learn:</b> RecyclerView, Buttons, ArrayList<br>
+        – <b>Tip:</b> Long‑press to delete a task
+      </div>
+      <img src="todoList.png" alt="To‑Do App Screenshot">
+    </li>
+
+    <li>
+      <div>
+        <strong>Color Picker App</strong><br>
+        – <b>Goal:</b> Change background with buttons<br>
+        – <b>Learn:</b> OnClickListener, Layout updates<br>
+        – <b>Tip:</b> Add a Random Color button
+      </div>
+      <img src="ColorPicker.png" alt="Color Picker Screenshot">
+    </li>
+  </ul>
+</div>
+
+
+
+  </div>
+
+  <div class="section" id="questions">
+    <h3>UI/UX Interview Questions</h3>
+    <ul>
+      <li>What is Material Design?</li>
+      <li>Difference between Fragment and Activity?</li>
+      <li>How to manage screen density?</li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = (section.style.display === "block") ? "none" : "block";
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+
+
+
+    // Get modal and elements
+  const modal = document.getElementById("imageModal");
+  const img = document.getElementById("zoomImg");
+  const modalImg = document.getElementById("imgModal");
+  const close = document.getElementsByClassName("close")[0];
+
+  // Open modal on click
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+
+  // Close modal
+  close.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  // Close on background click
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+</body>
+</html>

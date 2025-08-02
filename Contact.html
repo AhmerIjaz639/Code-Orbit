@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #032f80, #ef3f3f);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+
+  
+.top-navbar {
+
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #f50b0b, #004aad);
+  border-radius: 30px;
+  padding: 12px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  display: flex;
+  gap: 30px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.top-navbar a {
+  color: #f4f0f0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.top-navbar a:hover {
+  color: #00ffff;
+}
+
+    .contact-container {
+      max-width: 600px;
+      margin: 80px auto;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .contact-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ffffffdd;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+    }
+
+    .contact-form button {
+      background-color: #ffffff;
+      color: #1e3c72;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      transition:  0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #1e3c72;
+      color: white;
+    }
+
+   .social-links {
+  margin-top: 20px;
+}
+
+.insta-icon {
+  width: 40px;
+  margin-left: 270px;
+  height: 40px;
+  filter: brightness(0) invert(1);
+   justify-content: center;
+   display: flex;
+  transition: transform 0.3s;
+}
+
+.insta-icon:hover {
+  transform: scale(1.1);
+}
+
+
+.footer {
+  background: linear-gradient(90deg, #fb0e0e, #202bf7);
+  color: #ffffffcc;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  margin-top: 40px;
+  
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+.footer-content p {
+  margin: 0px 0;
+  line-height: 1.5;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+  </style>
+</head>
+<body>
+
+
+  <div class="top-navbar">
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Feedback.html">Feedback</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Explore.html">Explore</a>
+  </div>
+
+
+
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mwpqqwon" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message..." required></textarea>
+
+      <input type="hidden" name="_next" value="thankyou.html">
+      <button type="submit">Send Message</button>
+    </form>
+
+     <div class="social-links">
+    <a href="https://instagram.com/call_to_deen63" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" class="insta-icon">
+    </a>
+  </div>
+  </div>
+
+
+  <footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Code Orbit. All rights reserved.</p>
+    <p>Designed with 💻 and ☕ by  CipherSoul </p>
+  </div>
+</footer>
+
+</body>
+</html>

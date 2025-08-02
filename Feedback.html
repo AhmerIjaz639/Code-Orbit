@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback Code Orbit</title>
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+  
+
+     <div class="top-navbar">
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Feedback.html">Feedback</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Explore.html">Explore</a>
+  </div>
+
+  <div class="feedback-container">
+    <h2>We Value Your Feedback</h2>
+    <p>Your thoughts help us grow!</p>
+   <!-- Feedback Form connected to Formspree -->
+<form action="https://formspree.io/f/mwpqqwon" method="POST" class="feedback-form">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <textarea name="message" rows="5" placeholder="Your Feedback..." required></textarea>
+
+  <!-- Optional: Redirect to thank you page after submission -->
+  <input type="hidden" name="_next" value="/">
+
+  <button type="submit" class="feedback-button">Submit Feedback</button>
+
+</form>
+
+  </div>
+
+  
+
+
+ 
+
+</body>
+</html>

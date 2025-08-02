@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Download</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+
+    
+.top-navbar {
+
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #f50b0b, #004aad);
+  border-radius: 30px;
+  padding: 12px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  display: flex;
+  gap: 30px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.top-navbar a {
+  color: #f4f0f0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.top-navbar a:hover {
+  color: #00ffff;
+}
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .download-button {
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #2d3eaf;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .download-button:hover {
+      background-color: #1a2480;
+    }
+  </style>
+</head>
+<body>
+
+
+    <div class="top-navbar">
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Feedback.html">Feedback</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Explore.html">Explore</a>
+  </div>
+
+  <h2>Road Map</h2>
+
+  <!-- Image Display -->
+  <img src="androidRoadmap.jpg" alt="Downloadable Image" id="image">
+
+  <!-- Download Button -->
+  <a href="your-image.jpg" download="downloaded-image.jpg" class="download-button">Download RoadMap</a>
+
+</body>
+</html>

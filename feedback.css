@@ -1,0 +1,140 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #060518, #0b0e2e); /* existing dark techy background */
+  font-family: 'Segoe UI', sans-serif;
+}
+.top-navbar {
+
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #f50b0b, #004aad);
+  border-radius: 30px;
+  padding: 12px 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  backdrop-filter: blur(10px);
+  display: flex;
+  gap: 30px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.top-navbar a {
+  color: #ffffffcc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.top-navbar a:hover {
+  color: #00ffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ef0508, #0905ee);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.top-nav {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  z-index: 999;
+}
+.home-link {
+  font-size: 18spx;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+  position: relative;
+
+}
+
+
+.home-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #00bfff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.home-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.feedback-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.feedback-container h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.feedback-container p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #ffffffcc;
+}
+
+/* Form styles */
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #ffffffcc;
+  color: #333;
+  font-size: 14px;
+}
+
+.feedback-form textarea {
+  resize: none;
+}
+
+.feedback-form .feedback-button {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #1e90ff;
+  padding: 12px 20px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.feedback-form .feedback-button:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+
+
