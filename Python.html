@@ -8,6 +8,9 @@
 </head>
 <body>
 
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Back to Top">↑ Back to Top</button>
+
+
 <!-- Top Navbar -->
 <div class="top-navbar">
   <a href="index.html">Home</a>
@@ -200,6 +203,30 @@ function toggleSubTopic(id) {
   const sub = document.getElementById(id);
   sub.style.display = (sub.style.display === "block") ? "none" : "block";
 }
+
+
+
+  // Show button only when user scrolls down
+  window.onscroll = function () {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  };
+
+  // Scroll to top function
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+
+
+
 </script>
 
 </body>
