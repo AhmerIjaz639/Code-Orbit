@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C Programming</title>
+  <link rel="stylesheet" href="Cstyle.css">
+</head>
+<body>
+  
+<!-- Top Navbar -->
+<div class="top-navbar">
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Feedback.html">Feedback</a>
+  <a href="Contact.html">Contact</a>
+  <a href="Explore.html">Explore</a>
+</div>
+
+<!-- Title -->
+<div class="title">
+  <h1>C Programming</h1>
+  <p>Master C Programming from Fundamentals to DSA with free resources!</p>
+</div>
+
+<!-- Cards -->
+<div class="cards">
+  <div class="card" onclick="toggleSection('fundamentals')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/code.png" alt="Fundamentals"/>
+    <p>Fundamentals</p>
+  </div>
+  <div class="card" onclick="toggleSection('pointers')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/memory-slot.png" alt="Pointers"/>
+    <p>Pointers & Memory</p>
+  </div>
+  <div class="card" onclick="toggleSection('dsa')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/data-configuration.png" alt="DSA"/>
+    <p>DSA in C</p>
+  </div>
+  <div class="card" onclick="toggleSection('projects')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/project.png" alt="Projects"/>
+    <p>Projects & Practice</p>
+  </div>
+</div>
+
+<!-- Fundamentals Section -->
+<div class="section" id="fundamentals">
+  <h3>Fundamentals of C</h3>
+  <ul>
+    <li><strong>Variables & Data Types</strong> – int, float, char, double</li>
+    <li><strong>Control Flow</strong> – if-else, switch, loops</li>
+    <li><strong>Functions</strong> – declaration, definition, recursion</li>
+    <li><strong>Arrays & Strings</strong> – 1D/2D arrays, string handling</li>
+  </ul>
+</div>
+
+<!-- Pointers Section -->
+<div class="section" id="pointers">
+  <h3>Pointers & Memory in C</h3>
+  <ul>
+    <li><strong>Pointers</strong> – concept, dereferencing, pointer arithmetic</li>
+    <li><strong>Dynamic Memory</strong> – malloc, calloc, realloc, free</li>
+    <li><strong>Function Pointers</strong> – passing functions as arguments</li>
+    <li><strong>File Handling</strong> – fopen, fprintf, fscanf, fclose</li>
+  </ul>
+</div>
+
+<!-- DSA Section -->
+<div class="section" id="dsa">
+  <h3>DSA in C</h3>
+  <ul>
+    <li><strong>Linked List</strong> – single & double linked list</li>
+    <li><strong>Stack & Queue</strong> – array & linked list implementation</li>
+    <li><strong>Trees & Binary Search Tree</strong> – insertion, traversal</li>
+    <li><strong>Sorting & Searching</strong> – bubble, quicksort, binary search</li>
+  </ul>
+</div>
+
+<!-- Projects Section -->
+<div class="section" id="projects">
+  <h3>Mini Projects Ideas</h3>
+  <ul>
+    <li><strong>Calculator</strong> – arithmetic operations using functions</li>
+    <li><strong>Student Record System</strong> – file handling with CRUD</li>
+    <li><strong>Tic-Tac-Toe</strong> – 2-player console game</li>
+    <li><strong>Library Management</strong> – using structures & files</li>
+  </ul>
+</div>
+
+
+<!-- Start Learning Button -->
+<div class="start-learning" style="text-align: center; margin-top: 40px;">
+  <button onclick="toggleSection('learnC')" class="learn-btn">🚀 Start Learning C Language</button>
+</div>
+<!-- Learn C Language Section -->
+<div class="section" id="learnC">
+  <h3>📘 Learn C Programming (Click Each Topic)</h3>
+  <div class="learn-topic" onclick="toggleSubTopic('topic1')">Variables and Data Types</div>
+  <div class="sub-topic" id="topic1">
+    <p><strong>int, float, char, double</strong> – In C, variables are declared with a specific type. For example:</p>
+    <pre><code>int age = 20;
+float height = 5.9;
+char grade = 'A';</code></pre>
+  </div>
+
+  <div class="learn-topic" onclick="toggleSubTopic('topic2')">Control Statements (if, else, loops)</div>
+  <div class="sub-topic" id="topic2">
+    <p>Control statements are used to make decisions and repeat actions.</p>
+    <pre><code>if(age > 18) {
+  printf("Adult");
+} else {
+  printf("Minor");
+}</code></pre>
+  </div>
+
+  <div class="learn-topic" onclick="toggleSubTopic('topic3')">Functions in C</div>
+  <div class="sub-topic" id="topic3">
+    <p>Functions help organize code into reusable blocks.</p>
+    <pre><code>int sum(int a, int b) {
+  return a + b;
+}</code></pre>
+  </div>
+
+  <!-- You can keep adding more topics here -->
+</div>
+
+<!-- Toggle Buttons -->
+<div class="toggle-buttons">
+  <button onclick="toggleSection('roadmap')">📍 Roadmap</button>
+  <button onclick="toggleSection('mini')">Mini Projects</button>
+  <button onclick="toggleSection('questions')">Interview Questions</button>
+</div>
+
+<!-- Roadmap Section -->
+<div class="section" id="roadmap">
+  <h3>C Programming Roadmap</h3>
+
+  <!-- Iframe to display the roadmap HTML file -->
+  <iframe src="roadmapC.html" width="100%" height="400px" style="border: none;"></iframe>
+
+  <!-- Download Button to download the same HTML file -->
+  <a href="roadmapC.html" download="C-Programming-Roadmap.html" class="download-button">
+    Download Roadmap 
+  </a>
+</div>
+
+
+
+<!-- Mini Project Section -->
+<div class="section" id="mini">
+  <h3>Mini Projects</h3>
+  <ul>
+    <li>ATM Simulation System</li>
+    <li>Hospital Management System</li>
+    <li>Snake Game in Console</li>
+  </ul>
+</div>
+
+<!-- Interview Questions -->
+<div class="section" id="questions">
+  <h3>Interview Questions</h3>
+  <ul>
+    <li>Difference between Call by Value and Call by Reference?</li>
+    <li>What is a dangling pointer?</li>
+    <li>Explain static and dynamic memory allocation.</li>
+  </ul>
+</div>
+
+<!-- FREE RESOURCES SECTION -->
+<div class="section" id="free-resources" style="display:block;">
+  <h3>🎓 Top Free C Programming Resources</h3>
+  <p style="text-align:center; color:#444;">Learn C Programming from the best free courses, PDFs, and projects.</p>
+  
+  <div class="resource-grid">
+
+    <!-- Resource Card 1 -->
+    <div class="resource-card">
+      <img src="https://i.ytimg.com/vi/KJgsSFOSQv0/maxresdefault.jpg" alt="FreeCodeCamp C"/>
+      <h4>FreeCodeCamp – 4 hr C Programming</h4>
+      <p>Complete beginner C course covering syntax, loops, functions, and arrays.</p>
+      <a href="https://www.youtube.com/watch?v=KJgsSFOSQv0" target="_blank" class="resource-btn">Watch on YouTube</a>
+    </div>
+
+    <!-- Resource Card 2 -->
+    <div class="resource-card">
+      <img src="https://i.ytimg.com/vi/ZSPZob_1TOk/maxresdefault.jpg" alt="Jenny's Lectures"/>
+      <h4>Jenny's Lectures – C Language</h4>
+      <p>Step by step C programming tutorials in Hindi/Urdu for beginners.</p>
+      <a href="https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpoGR2K4g2l2x" target="_blank" class="resource-btn">Open Playlist</a>
+    </div>
+
+    <!-- Resource Card 3 -->
+    <div class="resource-card">
+      <img src="pdficon.png" alt="Let Us C"/>
+      <h4>Let Us C (PDF)</h4>
+      <p>Classic book for C programming basics with exercises and explanations.</p>
+      <a href="https://ia801306.us.archive.org/5/items/let-us-c/Let%20Us%20C.pdf" target="_blank" class="resource-btn">Download PDF</a>
+    </div>
+
+    <!-- Resource Card 4 -->
+    <div class="resource-card">
+      <img src="pdficon.png" alt="C Notes"/>
+      <h4>C Programming Notes</h4>
+      <p>Quick revision notes covering pointers, arrays, and important concepts.</p>
+      <a href="https://www.tutorialspoint.com/cprogramming/cprogramming_tutorial.pdf" target="_blank" class="resource-btn">Download Notes</a>
+    </div>
+
+    <!-- Resource Card 5 -->
+    <div class="resource-card">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Projects"/>
+      <h4>GitHub – Awesome C</h4>
+      <p>Explore top open-source C projects and learn from real-world examples.</p>
+      <a href="https://github.com/oz123/awesome-c" target="_blank" class="resource-btn">Explore Projects</a>
+    </div>
+
+    <!-- Resource Card 6 -->
+    <div class="resource-card">
+      <img src="pdficon.png" alt="Cheat Sheet"/>
+      <h4>C Programming Cheat Sheet</h4>
+      <p>Quick syntax and common functions for faster coding in C.</p>
+      <a href="https://quickref.me/c.html" target="_blank" class="resource-btn">Open Cheat Sheet</a>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- Modal for image zoom -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgModal">
+</div>
+
+<script>
+function toggleSection(id) {
+  const section = document.getElementById(id);
+  section.style.display = (section.style.display === "block") ? "none" : "block";
+  section.scrollIntoView({ behavior: 'smooth' });
+}
+
+const modal = document.getElementById("imageModal");
+const img = document.getElementById("zoomImg");
+const modalImg = document.getElementById("imgModal");
+const close = document.getElementsByClassName("close")[0];
+
+img.onclick = function() {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+close.onclick = function() {
+  modal.style.display = "none";
+}
+
+modal.onclick = function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+
+function toggleSubTopic(id) {
+  const sub = document.getElementById(id);
+  sub.style.display = (sub.style.display === "block") ? "none" : "block";
+}
+
+</script>
+
+</body>
+</html>

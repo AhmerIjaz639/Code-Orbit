@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Java Learning Roadmap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9fb;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+    }
+    .timeline {
+      display: flex;
+      gap: 2rem;
+      overflow-x: auto;
+      padding: 1rem 0;
+    }
+    .stage {
+      min-width: 300px;
+      background-color: white;
+      border: 2px solid #0057e7;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+    .stage:nth-child(even) {
+      border-color: #ff4500;
+    }
+    .stage h2 {
+      margin-top: 0;
+      color: #0057e7;
+    }
+    .stage ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .stage ul li::before {
+      content: "› ";
+      color: #999;
+    }
+    .sublist {
+      margin-left: 1rem;
+      font-size: 0.95rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Java Learning Roadmap</h1>
+  <div class="timeline">
+    <div class="stage">
+      <h2>Java Basics</h2>
+      <ul>
+        <li>Introduction to Java</li>
+        <li>Installation (JDK, IDEs)</li>
+        <li>Hello World Program</li>
+        <li>Data Types and Variables</li>
+        <li>Operators</li>
+        <li>Type Casting</li>
+        <li>Input and Output</li>
+        <li>Conditional Statements</li>
+        <li>Loops</li>
+        <li>Arrays</li>
+      </ul>
+    </div>
+    <div class="stage">
+      <h2>OOP in Java</h2>
+      <ul>
+        <li>Classes and Objects</li>
+        <li>Constructors</li>
+        <li>Inheritance</li>
+        <li>Overloading & Overriding</li>
+        <li>Abstraction</li>
+        <li>Encapsulation</li>
+        <li>Polymorphism</li>
+        <li>Access Modifiers</li>
+        <li>'this' and 'super'</li>
+        <li>Static vs Instance</li>
+      </ul>
+    </div>
+    <div class="stage">
+      <h2>Exception Handling</h2>
+      <ul>
+        <li>try-catch-finally</li>
+        <li>throw vs throws</li>
+        <li>Custom Exceptions</li>
+      </ul>
+    </div>
+    <div class="stage">
+      <h2>Collections Framework</h2>
+      <ul>
+        <li>List</li>
+        <li>Set</li>
+        <li>Map</li>
+        <li>Queue</li>
+        <li>Iterators</li>
+      </ul>
+    </div>
+    <div class="stage">
+      <h2>DSA in Java</h2>
+      <ul>
+        <li>Time & Space Complexity</li>
+        <li>Arrays and Strings</li>
+        <li>Stack, Queue, LinkedList</li>
+        <li>Tree, BST</li>
+        <li>Recursion & Backtracking</li>
+        <li>Hashing</li>
+        <li>Searching & Sorting</li>
+        <li>Graph Algorithms</li>
+        <li>Dynamic Programming</li>
+        <li>Sliding Window, Two Pointers</li>
+      </ul>
+    </div>
+    <div class="stage">
+      <h2>Java GUI</h2>
+      <ul>
+        <li><strong>Swing</strong>
+          <ul class="sublist">
+            <li>JFrame, JPanel</li>
+            <li>Layout Managers</li>
+            <li>Buttons, Text Fields</li>
+            <li>Event Handling</li>
+          </ul>
+        </li>
+        <li><strong>JavaFX</strong>
+          <ul class="sublist">
+            <li>Stage, Scene, Nodes</li>
+            <li>FXML Basics</li>
+            <li>Controls</li>
+            <li>Styling with CSS</li>
+            <li>Event Handling</li>
+            <li>SceneBuilder</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="stage">
+      <h2>Advanced Java</h2>
+      <ul>
+        <li>Multithreading</li>
+        <li>File Handling</li>
+        <li>Networking</li>
+        <li>Lambda Expressions</li>
+        <li>Stream API</li>
+        <li>JDBC</li>
+        <li>Annotations</li>
+        <li>Reflection API</li>
+        <li>Packages</li>
+      </ul>
+    </div>
+    <div class="stage">
+      <h2>Project Ideas</h2>
+      <ul>
+        <li>Console Calculator</li>
+        <li>To-Do List (JavaFX)</li>
+        <li>Student Management</li>
+        <li>Socket Chat App</li>
+        <li>Notes App with JDBC</li>
+        <li>File Explorer (Swing)</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

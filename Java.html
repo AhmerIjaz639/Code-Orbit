@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Programming</title>
+  <link rel="stylesheet" href="Javastyle.css">
+</head>
+<body>
+  
+<!-- Top Navbar -->
+<div class="top-navbar">
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Feedback.html">Feedback</a>
+  <a href="Contact.html">Contact</a>
+  <a href="Explore.html">Explore</a>
+</div>
+
+<!-- Title -->
+<div class="title">
+  <h1>Java Programming</h1>
+  <p>Master Java from Basics to OOP, DSA and Projects!</p>
+</div>
+
+<!-- Cards -->
+<div class="cards">
+  <div class="card" onclick="toggleSection('basics')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/code.png" alt="Basics"/>
+    <p>Basics</p>
+  </div>
+  <div class="card" onclick="toggleSection('oop')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/object.png" alt="OOP"/>
+    <p>OOP Concepts</p>
+  </div>
+  <div class="card" onclick="toggleSection('java-dsa')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/data-configuration.png" alt="DSA"/>
+    <p>DSA in Java</p>
+  </div>
+  <div class="card" onclick="toggleSection('javaprojects')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/project.png" alt="Projects"/>
+    <p>Projects & Practice</p>
+  </div>
+</div>
+
+<!-- Sections -->
+<div class="section" id="basics">
+  <h3>Java Basics</h3>
+  <ul>
+    <li>Variables, Data Types, and Input/Output</li>
+    <li>Conditionals and Loops</li>
+    <li>Methods & Parameters</li>
+    <li>Arrays and Strings</li>
+  </ul>
+</div>
+
+<div class="section" id="oop">
+  <h3>Object-Oriented Programming (OOP)</h3>
+  <ul>
+    <li>Classes and Objects</li>
+    <li>Encapsulation, Inheritance, Polymorphism, Abstraction</li>
+    <li>Constructors and Method Overloading</li>
+    <li>Interfaces and Abstract Classes</li>
+  </ul>
+</div>
+
+<div class="section" id="java-dsa">
+  <h3>DSA in Java</h3>
+  <ul>
+    <li>ArrayList, LinkedList</li>
+    <li>Stack, Queue, HashMap</li>
+    <li>Recursion and Backtracking</li>
+    <li>Sorting and Searching Algorithms</li>
+  </ul>
+</div>
+
+<div class="section" id="javaprojects">
+  <h3>Mini Projects</h3>
+  <ul>
+    <li>Task Manager App (JavaFX)</li>
+    <li>Student Record System</li>
+    <li>Currency Converter</li>
+    <li>Library Management System</li>
+  </ul>
+</div>
+
+<!-- Start Learning Button -->
+<div class="start-learning" style="text-align: center; margin-top: 40px;">
+  <button onclick="toggleSection('learnJava')" class="learn-btn">🚀 Start Learning Java Language</button>
+</div>
+
+<!-- Learn Java Section -->
+<div class="section" id="learnJava">
+  <h3>📘 Learn Java (Click Each Topic)</h3>
+
+  <div class="learn-topic" onclick="toggleSubTopic('jtopic1')">Java Data Types</div>
+  <div class="sub-topic" id="jtopic1">
+    <p>Java supports <strong>int, float, char, double, boolean</strong>, etc.</p>
+    <pre><code>int age = 25;
+float pi = 3.14f;
+boolean isJavaFun = true;</code></pre>
+  </div>
+
+  <div class="learn-topic" onclick="toggleSubTopic('jtopic2')">Classes and Objects</div>
+  <div class="sub-topic" id="jtopic2">
+    <p>Classes are blueprints of objects.</p>
+    <pre><code>class Car {
+  String color = "Red";
+}</code></pre>
+  </div>
+
+  <div class="learn-topic" onclick="toggleSubTopic('jtopic3')">Inheritance in Java</div>
+  <div class="sub-topic" id="jtopic3">
+    <p>Inheritance allows one class to acquire properties of another.</p>
+    <pre><code>class Animal {
+  void sound() { System.out.println("Sound!"); }
+}
+class Dog extends Animal {
+  void bark() { System.out.println("Bark!"); }
+}</code></pre>
+  </div>
+</div>
+
+<!-- Toggle Buttons -->
+<div class="toggle-buttons">
+  <button onclick="toggleSection('roadmap')">📍 Roadmap</button>
+  <button onclick="toggleSection('questions')">Interview Questions</button>
+</div>
+
+<!-- Roadmap -->
+<div class="section" id="roadmap">
+  <h3>C Programming Roadmap</h3>
+
+  <!-- Iframe to display the roadmap HTML file -->
+  <iframe src="roadmapJAVA.html" width="100%" height="500px" style="border: none;"></iframe>
+
+  <!-- Download Button to download the same HTML file -->
+  <a href="roadmapJAVA.html" download="C-Programming-Roadmap.html" class="download-button">
+    Download Roadmap 
+  </a>
+</div>
+
+<!-- Interview Questions -->
+<div class="section" id="questions">
+  <h3>Interview Questions</h3>
+  <ul>
+    <li>Difference between Interface and Abstract class?</li>
+    <li>What is JVM and how it works?</li>
+    <li>Explain Collections framework in Java.</li>
+  </ul>
+</div>
+
+<!-- FREE RESOURCES -->
+<div class="section" id="free-resources" style="display:block;">
+  <h3>🎓 Top Free Java Programming Resources</h3>
+  <p style="text-align:center; color:#444;">Learn Java Programming from free courses, PDFs, and projects.</p>
+
+  <div class="resource-grid">
+    <div class="resource-card">
+      <img src="https://i.ytimg.com/vi/GoXwIVyNvX0/maxresdefault.jpg" alt="FreeCodeCamp Java"/>
+      <h4>FreeCodeCamp – Java 4 hr</h4>
+      <p>Full beginner Java course covering syntax, OOP, and DSA.</p>
+      <a href="https://www.youtube.com/watch?v=GoXwIVyNvX0" target="_blank" class="resource-btn">Watch on YouTube</a>
+    </div>
+
+    <div class="resource-card">
+      <img src="https://i.ytimg.com/vi/eIrMbAQSU34/maxresdefault.jpg" alt="Telusko Java"/>
+      <h4>Telusko Java Playlist</h4>
+      <p>Best beginner-friendly series in Hindi/Urdu with real examples.</p>
+      <a href="https://www.youtube.com/playlist?list=PLsyeobzWxl7oA8Qn9xPmJ1WDC1tX0gc5x" target="_blank" class="resource-btn">Open Playlist</a>
+    </div>
+
+    <div class="resource-card">
+      <img src="pdficon.png" alt="Java Book"/>
+      <h4>Java Complete Reference (PDF)</h4>
+      <p>Extensive book for Java with OOP, multithreading, etc.</p>
+      <a href="https://ia902606.us.archive.org/35/items/herbert-schildt-java-the-complete-reference-tata-mcgraw-hill-2011_202008/Herbert%20Schildt%20-%20Java%20The%20Complete%20Reference-Tata%20McGraw-Hill%20%282011%29.pdf" target="_blank" class="resource-btn">Download PDF</a>
+    </div>
+
+    <div class="resource-card">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Projects"/>
+      <h4>GitHub – Awesome Java</h4>
+      <p>Explore top open-source Java projects and contribute.</p>
+      <a href="https://github.com/akullpp/awesome-java" target="_blank" class="resource-btn">Explore Projects</a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="imgModal">
+</div>
+
+<!-- JavaScript -->
+<script>
+function toggleSection(id) {
+  const section = document.getElementById(id);
+  section.style.display = (section.style.display === "block") ? "none" : "block";
+  section.scrollIntoView({ behavior: 'smooth' });
+}
+
+function toggleSubTopic(id) {
+  const sub = document.getElementById(id);
+  sub.style.display = (sub.style.display === "block") ? "none" : "block";
+}
+
+const modal = document.getElementById("imageModal");
+const img = document.getElementById("zoomImg");
+const modalImg = document.getElementById("imgModal");
+const close = document.getElementsByClassName("close")[0];
+
+img.onclick = function() {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+close.onclick = function() {
+  modal.style.display = "none";
+}
+
+modal.onclick = function(e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
