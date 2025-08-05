@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Programming</title>
+  <link rel="stylesheet" href="Cstyle.css"> <!-- Reuse same CSS -->
+</head>
+<body>
+
+<!-- Top Navbar -->
+<div class="top-navbar">
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Feedback.html">Feedback</a>
+  <a href="Contact.html">Contact</a>
+  <a href="Explore.html">Explore</a>
+</div>
+
+<!-- Title -->
+<div class="title">
+  <h1>Python Programming</h1>
+  <p>Learn Python from Basics to Projects with Free Resources!</p>
+</div>
+
+<!-- Cards -->
+<div class="cards">
+  <div class="card" onclick="toggleSection('basics')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/code.png"/>
+    <p>Basics</p>
+  </div>
+  <div class="card" onclick="toggleSection('oop')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/class.png"/>
+    <p>OOP in Python</p>
+  </div>
+  <div class="card" onclick="toggleSection('modules')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/module.png"/>
+    <p>Modules & Libs</p>
+  </div>
+  <div class="card" onclick="toggleSection('projects')">
+    <img src="https://img.icons8.com/ios-filled/50/000000/project.png"/>
+    <p>Projects</p>
+  </div>
+</div>
+
+<!-- Basics Section -->
+<div class="section" id="basics">
+  <h3>Python Basics</h3>
+  <ul>
+    <li>Variables, Data Types</li>
+    <li>Input/Output, Operators</li>
+    <li>Loops (for, while), if-else</li>
+    <li>Functions & Recursion</li>
+  </ul>
+</div>
+
+<!-- OOP Section -->
+<div class="section" id="oop">
+  <h3>OOP Concepts in Python</h3>
+  <ul>
+    <li>Classes and Objects</li>
+    <li>Encapsulation, Inheritance</li>
+    <li>Polymorphism & Abstraction</li>
+    <li>Magic Methods (__init__, __str__)</li>
+  </ul>
+</div>
+
+<!-- Modules Section -->
+<div class="section" id="modules">
+  <h3>Popular Python Libraries</h3>
+  <ul>
+    <li>Math, OS, Random</li>
+    <li>NumPy, Pandas, Matplotlib</li>
+    <li>Requests, JSON</li>
+    <li>Custom Module Creation</li>
+  </ul>
+</div>
+
+<!-- Projects Section -->
+<div class="section" id="projects">
+  <h3>Mini Projects Ideas</h3>
+  <ul>
+    <li>To-Do App (CLI/GUI)</li>
+    <li>Simple Calculator</li>
+    <li>Weather App using API</li>
+    <li>Quiz App / Flash Cards</li>
+  </ul>
+</div>
+
+<!-- Start Learning -->
+<div class="start-learning" style="text-align: center; margin-top: 40px;">
+  <button onclick="toggleSection('learnPython')" class="learn-btn">🚀 Start Learning Python</button>
+</div>
+
+<!-- Learn Python Section -->
+<div class="section" id="learnPython">
+  <h3>📘 Learn Python Programming</h3>
+
+  <div class="learn-topic" onclick="toggleSubTopic('py1')">Variables & Data Types</div>
+  <div class="sub-topic" id="py1">
+    <pre><code>x = 5
+name = "Akhi"
+pi = 3.14</code></pre>
+  </div>
+
+  <div class="learn-topic" onclick="toggleSubTopic('py2')">Conditional Statements</div>
+  <div class="sub-topic" id="py2">
+    <pre><code>if x > 0:
+  print("Positive")
+else:
+  print("Negative")</code></pre>
+  </div>
+
+  <div class="learn-topic" onclick="toggleSubTopic('py3')">Loops and Functions</div>
+  <div class="sub-topic" id="py3">
+    <pre><code>def greet(name):
+  print("Hello", name)</code></pre>
+  </div>
+</div>
+
+<!-- Toggle Buttons -->
+<div class="toggle-buttons">
+  <button onclick="toggleSection('roadmap')">📍 Roadmap</button>
+  <button onclick="toggleSection('mini')">Mini Projects</button>
+  <button onclick="toggleSection('questions')">Interview Questions</button>
+</div>
+
+<!-- Roadmap Section -->
+<div class="section" id="roadmap">
+  <h3>Python Programming Roadmap</h3>
+  <iframe src="roadmapPython.html" width="100%" height="500px" style="border:none;"></iframe>
+  <a href="roadmapPython.html" download="Python-Programming-Roadmap.html" class="download-button">
+    Download Roadmap
+  </a>
+</div>
+
+<!-- Mini Projects -->
+<div class="section" id="mini">
+  <h3>Mini Projects</h3>
+  <ul>
+    <li>Password Generator</li>
+    <li>Digital Clock using Tkinter</li>
+    <li>Basic ChatBot</li>
+  </ul>
+</div>
+
+<!-- Interview Questions -->
+<div class="section" id="questions">
+  <h3>Interview Questions</h3>
+  <ul>
+    <li>Difference between list, tuple, set?</li>
+    <li>What is Python's GIL?</li>
+    <li>Explain decorators with example</li>
+  </ul>
+</div>
+
+<!-- Free Resources -->
+<div class="section" id="free-resources" style="display:block;">
+  <h3>🎓 Top Free Python Resources</h3>
+  <div class="resource-grid">
+
+    <div class="resource-card">
+      <img src="https://i.ytimg.com/vi/_uQrJ0TkZlc/maxresdefault.jpg"/>
+      <h4>FreeCodeCamp – Python Full Course</h4>
+      <p>Best beginner-to-advanced crash course on YouTube.</p>
+      <a href="https://www.youtube.com/watch?v=_uQrJ0TkZlc" target="_blank" class="resource-btn">Watch on YouTube</a>
+    </div>
+
+    <div class="resource-card">
+      <img src="https://i.ytimg.com/vi/apACNr7DC_s/maxresdefault.jpg"/>
+      <h4>CodeWithHarry – Python (Hindi)</h4>
+      <p>Complete Python in Hindi – ideal for Desi learners.</p>
+      <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ah7DDtYtflgwMwpT3xmjXY9" target="_blank" class="resource-btn">Open Playlist</a>
+    </div>
+
+    <div class="resource-card">
+      <img src="pdficon.png"/>
+      <h4>Python Notes PDF</h4>
+      <p>Quick notes covering syntax, OOP, and libraries.</p>
+      <a href="https://www.cs.cmu.edu/~112/notes/notes.pdf" target="_blank" class="resource-btn">Download Notes</a>
+    </div>
+
+    <div class="resource-card">
+      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>
+      <h4>Awesome Python Projects</h4>
+      <p>Explore trending Python repos on GitHub.</p>
+      <a href="https://github.com/vinta/awesome-python" target="_blank" class="resource-btn">Explore Projects</a>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function toggleSection(id) {
+  const section = document.getElementById(id);
+  section.style.display = (section.style.display === "block") ? "none" : "block";
+  section.scrollIntoView({ behavior: 'smooth' });
+}
+function toggleSubTopic(id) {
+  const sub = document.getElementById(id);
+  sub.style.display = (sub.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>

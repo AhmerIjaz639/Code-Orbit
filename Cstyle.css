@@ -1,7 +1,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f1f3f6;
+ background: linear-gradient(to right, #f50b0b, #004aad);
   margin: 0;
   padding: 0;
 }
@@ -63,12 +63,12 @@ body {
 
 .title h1 {
   font-size: 2.5rem;
-  color: #2c3e50;
+  color: #f8f9f9;
 }
 
 .title p {
   font-size: 1.1rem;
-  color: #555;
+  color: #fefefe;
   margin-top: 8px;
 }
 
@@ -97,7 +97,7 @@ body {
 
 .card:hover {
   transform: scale(1.05);
-  background: #e3f2fd;
+  background: #93cbf3;
 }
 
 .card img {
@@ -177,6 +177,7 @@ body {
 
 /* Resource Grid */
 .resource-grid {
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -195,6 +196,7 @@ body {
 
 .resource-card:hover {
   transform: translateY(-5px);
+  background-color: #00ffff;
 }
 
 .resource-card img {

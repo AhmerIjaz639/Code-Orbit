@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python Learning Roadmap</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9fb;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      color: #222;
+    }
+    .timeline {
+      display: flex;
+      gap: 2rem;
+      overflow-x: auto;
+      padding: 1rem 0;
+    }
+    .stage {
+      min-width: 300px;
+      background-color: white;
+      border: 2px solid #228B22;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+    .stage:nth-child(even) {
+      border-color: #ff4500;
+    }
+    .stage h2 {
+      margin-top: 0;
+      color: #228B22;
+    }
+    .stage ul {
+      list-style: none;
+      padding-left: 1rem;
+    }
+    .stage ul li::before {
+      content: "› ";
+      color: #999;
+    }
+    .sublist {
+      margin-left: 1rem;
+      font-size: 0.95rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Python Learning Roadmap</h1>
+  <div class="timeline">
+
+    <!-- Stage 1 -->
+    <div class="stage">
+      <h2>Python Basics</h2>
+      <ul>
+        <li>Introduction to Python</li>
+        <li>Installing Python & IDE (VS Code / PyCharm)</li>
+        <li>Hello World & Syntax</li>
+        <li>Variables & Data Types</li>
+        <li>Operators & Expressions</li>
+        <li>Type Casting</li>
+        <li>Input & Output</li>
+        <li>Conditional Statements</li>
+        <li>Loops (for, while)</li>
+        <li>Lists, Tuples, Sets, Dict</li>
+      </ul>
+    </div>
+
+    <!-- Stage 2 -->
+    <div class="stage">
+      <h2>Functions & OOP</h2>
+      <ul>
+        <li>Functions & Parameters</li>
+        <li>Lambda Functions</li>
+        <li>Modules & Packages</li>
+        <li>Classes & Objects</li>
+        <li>Constructors & Destructors</li>
+        <li>Inheritance & Polymorphism</li>
+        <li>Abstraction & Encapsulation</li>
+        <li>Static & Class Methods</li>
+        <li>Magic Methods (__init__, __str__)</li>
+      </ul>
+    </div>
+
+    <!-- Stage 3 -->
+    <div class="stage">
+      <h2>Exception Handling & File I/O</h2>
+      <ul>
+        <li>try-except-finally</li>
+        <li>Raising Exceptions</li>
+        <li>Custom Exceptions</li>
+        <li>File Read/Write</li>
+        <li>With Statement & Context Managers</li>
+        <li>Pickle (Serialization)</li>
+        <li>OS and Shutil Modules</li>
+      </ul>
+    </div>
+
+    <!-- Stage 4 -->
+    <div class="stage">
+      <h2>Intermediate Python</h2>
+      <ul>
+        <li>Iterators & Generators</li>
+        <li>Decorators</li>
+        <li>Comprehensions (List, Dict, Set)</li>
+        <li>Regular Expressions (re module)</li>
+        <li>Datetime Module</li>
+        <li>Virtual Environment & pip</li>
+      </ul>
+    </div>
+
+    <!-- Stage 5 -->
+    <div class="stage">
+      <h2>Popular Libraries</h2>
+      <ul>
+        <li>NumPy & Pandas</li>
+        <li>Matplotlib & Seaborn</li>
+        <li>Requests & BeautifulSoup (Web Scraping)</li>
+        <li>OpenCV (Computer Vision)</li>
+        <li>Pillow (Image Processing)</li>
+        <li>PyPDF2, Excel handling (openpyxl)</li>
+      </ul>
+    </div>
+
+    <!-- Stage 6 -->
+    <div class="stage">
+      <h2>Data Structures & Algorithms</h2>
+      <ul>
+        <li>Lists, Stack & Queue</li>
+        <li>Linked List</li>
+        <li>Binary Tree & BST</li>
+        <li>Searching & Sorting</li>
+        <li>Recursion & Backtracking</li>
+        <li>Dynamic Programming</li>
+        <li>Graph Algorithms</li>
+      </ul>
+    </div>
+
+    <!-- Stage 7 -->
+    <div class="stage">
+      <h2>Web & GUI Development</h2>
+      <ul>
+        <li><strong>Flask</strong>
+          <ul class="sublist">
+            <li>Routing</li>
+            <li>Templates (Jinja2)</li>
+            <li>Forms & CRUD</li>
+          </ul>
+        </li>
+        <li><strong>Django</strong>
+          <ul class="sublist">
+            <li>Models & ORM</li>
+            <li>Admin Panel</li>
+            <li>Authentication</li>
+          </ul>
+        </li>
+        <li><strong>GUI</strong>
+          <ul class="sublist">
+            <li>Tkinter</li>
+            <li>PyQt / Kivy</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Stage 8 -->
+    <div class="stage">
+      <h2>Advanced Python</h2>
+      <ul>
+        <li>Multithreading & Multiprocessing</li>
+        <li>Async Programming (asyncio)</li>
+        <li>Decorators & Context Managers</li>
+        <li>Generators in Depth</li>
+        <li>Unit Testing (unittest & pytest)</li>
+        <li>Logging & Debugging</li>
+        <li>Working with APIs (REST & JSON)</li>
+      </ul>
+    </div>
+
+    <!-- Stage 9 -->
+    <div class="stage">
+      <h2>Data Science & ML</h2>
+      <ul>
+        <li>NumPy, Pandas, Matplotlib</li>
+        <li>Scikit-learn</li>
+        <li>Data Cleaning & EDA</li>
+        <li>Machine Learning Basics</li>
+        <li>Deep Learning (TensorFlow, PyTorch)</li>
+        <li>Model Deployment</li>
+      </ul>
+    </div>
+
+    <!-- Stage 10 -->
+    <div class="stage">
+      <h2>Project Ideas</h2>
+      <ul>
+        <li>Calculator App (Tkinter)</li>
+        <li>Weather App (API + GUI)</li>
+        <li>Web Scraper with CSV Export</li>
+        <li>Blog Website (Flask/Django)</li>
+        <li>Data Dashboard (Pandas + Matplotlib)</li>
+        <li>AI Chatbot / ML Project</li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>
